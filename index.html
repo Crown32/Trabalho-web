@@ -1,370 +1,625 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <link
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="sortcut icon" href="img/logoaba.png" type="image/x-icon" />
+    <title>Okän</title>
+  </head>
 
-<head>
-  <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Document</title>
-</head>
+  <body data-spy="scroll" data-target=".navbar">
+    <!--Menu-->
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <!--Menu-->
-
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(248, 249, 250,0.6);">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Fim Menu-->
-
-  <!--Banner-->
-  <div class="banner">
-
-  </div>
-  <!--Banner-->
-
-  <!--Cards-->
-  <div class="containerCards">
-    <div class="divCards">
-
-      <div class="card cardStart" style="width: 18rem;background-color: #903004;">
-        <div>
-          <i class="fas fa-globe-americas" style="font-size: 80px; color: white;"></i>
-          <div class="card-body" style="color: white;">
-            <h5 class="card-title">Secondary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <h6><a href="#" class="cardLink">Mais detalhes</a><i style="font-size: 12px;"
-                class="fas fa-arrow-right"></i></h6>
-          </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background-color: rgba(255, 255, 255, 0.767)"
+    >
+      <a class="navbar-brand" href="" style="cursor: pointer"
+        ><img src="img/logomini.png" height="40px" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-link" href="#home">HOME</a>
+          <a class="nav-link" href="#quem-somos">QUEM SOMOS</a>
+          <a class="nav-link" href="#galeria">GALERIA</a>
+          <a class="nav-link" href="#curiosidades">CURIOSIDADES</a>
+          <a class="nav-link" href="#investidores">INVESTIDORES</a>
         </div>
       </div>
+    </nav>
 
-      <div class="card cardStart" style="width: 18rem;background-color: #8f3f1b;">
-        <div>
-          <i class="fas fa-rocket" style="font-size: 80px; color: white;"></i>
-          <div class="card-body" style="color: white;">
-            <h5 class="card-title">Sky Hook</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <h6><a href="#" class="cardLink">Mais detalhes</a><i style="font-size: 12px;"
-                class="fas fa-arrow-right"></i></h6>
-          </div>
-        </div>
-      </div>
+    <!-- Fim Menu-->
 
-      <div class="card cardStart" style="width: 18rem;background-color: #8f4726;">
-        <div>
-          <i class="fab fa-battle-net" style="font-size: 80px; color: white;"></i>
-          <div class="card-body" style="color: white;">
-            <h5 class="card-title">Inovação</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <h6><a href="#" class="cardLink">Mais detalhes</a><i style="font-size: 12px;"
-                class="fas fa-arrow-right"></i></h6>
-          </div>
-        </div>
-      </div>
-
+    <!--Banner-->
+    <a href="" id="home"></a>
+    <div class="banner">
+      <h1 style="color: whitesmoke; text-align: center; margin-top: -10vh">
+        <i style="font-size: 55px" class="fas fa-quote-left"></i><br />
+        Existem partes do sitema solar<br />muito distantes,
+        <a>mas poderiam estar bem<br />mais próximas</a>
+      </h1>
     </div>
-  </div>
-  <!--Cards-->
+    <!--Banner-->
 
-  <!--Main content-->
-
-  <!--Textos com imagens-->
-  <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-
-    <div class="containerTextImg d-flex align-items-center txt-img-1" style=" max-width: 1300px;">
-      <img src="img/nebula2.jpg" class="img" height="650px" width="650px" alt="#">
-      <div class="txt-container">
-        <h2 style="margin-bottom: 40px;" class="left">Quem Somos?</h2>
-        <p class="justify font">Somos um grupo de empresários que decidiram se unir em busca de inovação. Trabalhamos de forma prática e precisa, buscando realizar nossos objetivos. Nosso principal projeto é o Sky Hook, algo que facilitaria as viagens espaciais, com um ótimo custo beneficio para as explorações espaciais, criando a capacidade de evoluirmos de uma sociedade planetária para interplanetária.
-          <br><br>
-          Temos a palavra Okänd como nosso símbolo, pois a ideia do Sky Hook veio durante uma viagem na Suécia, inicialmente acreditamos estar buscando algo fora do alcance, desconhecido e basicamente taxado como impossível, mas estamos na área de exploração espacial exatamente para buscar o impossível e tornar possível. Okänd significa “Desconhecido” em sueco.
-          <br><br>
-            A Okänd é uma organização internacional da qual foi fundada no brasil, criada em 2012, uma empresa nova dentro do ramo, porem composta de profissionais de ata qualidade, conhecimento e dedicação. Atuamos em mais de 100 países e contamos com diversos investidores. 
-      </div>
-    </div>
-    <br><br>
-  </div>
-  <!--Textos com imagens-->
-  <!--Image mosaic-->
-  <div class="image-mosaic">
-    <div class="mosaic-card card-tall-2 card-wide-2" style="background-image:url('https://picsum.photos/id/564/1200/800')"></div>
-    <div class="mosaic-card card-tall-2" style="background-image:url('img/banner.jpg')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/575/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/626/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/667/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/678/800/530')"></div>
-    <div class="mosaic-card card-wide-3 card-tall-3" style="background-image:url('img/bannerSpace.jpg')"></div>
-    <div class="mosaic-card card-wide-2" style="background-image:url('https://picsum.photos/id/683/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/693/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/715/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/610/800/530')"></div>
-    <div class="mosaic-card" style="background-image:url('https://picsum.photos/id/599/800/530')"></div>
-  </div>
-  <!--Image mosaic-->
-  <!--accordion text-->
-  <div class="d-flex container-fluid align-items-center accordion-container">
-    <div class="accordion" id="accordionExample">
-      <h1>Curiosidades</h1>
-      <p>Apenas alguns pontos interessantes do Sky Hook</p>
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button onclick="check('1')" class="btn btn-link btn-block text-left align-items-center" type="button"
-              data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-              style="color: black;">
-              <label for="check1" class="d-flex accordion-item" style="cursor: pointer;">
-                <b>Infraestrutura</b>
-                <i class="fas fa-plus plus"></i>
-                <i class="fas fa-minus minus"></i>
-              </label>
-            </button>
-            <input type="checkbox" id="check1" hidden>
-          </h2>
-        </div>
-
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-            wolf
-            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-            anim
-            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-            probably
-            haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button onclick="check('2')" style="color: black;" class="btn btn-link btn-block text-left collapsed"
-              type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-              aria-controls="collapseTwo">
-              <label for="check2" class="d-flex accordion-item " style="cursor: pointer;">
-                <b>Composição</b>
-                <i class="fas fa-plus plus"></i>
-                <i class="fas fa-minus minus"></i>
-              </label>
-            </button>
-            <input type="checkbox" id="check2" hidden>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-            wolf
-            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-            anim
-            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-            probably
-            haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button onclick="check('3')" style="color: black;" class="btn btn-link btn-block text-left collapsed"
-              type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-              aria-controls="collapseThree">
-              <label for="check3" class="d-flex accordion-item" style="cursor: pointer;">
-                <b>Momentum</b>
-                <i class="fas fa-plus plus"></i>
-                <i class="fas fa-minus minus"></i>
-              </label>
-            </button>
-            <input type="checkbox" id="check3" hidden>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
-            wolf
-            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-            anim
-            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-            probably
-            haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <br><br>
-      <button type="button" class="btn btn-secondary"
-        style="border-radius:0; padding: 12px; margin-bottom: 30px;">Dowload Creeds..</button>
-    </div>
-    <img src="img/galaxy.png" class="img accordion-img" style="margin-bottom: 50px;" height="650px" alt="">
-  </div>
-  <!--accordion text-->
-
-
-
-  <!--Companies logos-->
-  <div class="container-logos container-fluid d-flex">
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class=" fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-    <div class="div-logo">
-      <i class="fas fa-user-astronaut"></i>
-    </div>
-  </div>
-  <!--Companies logos-->
-
-  <!--Main content-->
-
-  <!-- Footer -->
-  <footer class="page-footer font-small unique-color-dark">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
-
-      <!-- Grid row -->
-      <div class="row mt-3">
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-          <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">Okänd</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p style="text-align: justify;">Labore exercitation sit nisi consectetur dolor. Reprehenderit occaecat voluptate anim mollit eu ad commodo anim adipisicing culpa excepteur. 
-          </p>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
-          style="max-height: 230px; ; overflow:scroll; overflow-x:hidden;">
-
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Produtos</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a href="produtos.html#copo-pote-injet">Copos e potes injetados</a>
-          </p>
-          <p>
-            <a href="produtos.html#balde-injet">Baldes injetados</a>
-          </p>
-          <p>
-            <a href="produtos.html#copo-pote-termo">Copos e potes termoformados</a>
-          </p>
-          <p>
-            <a href="produtos.html#selos">Selos</a>
-          </p>
-          <p>
-            <a href="produtos.html#bobinas">Bobinas</a>
-          </p>
-          <p>
-            <a href="produtos.html#folhas-al">Folhas de alumínio</a>
-          </p>
-          <p>
-            <a href="produtos.html#blisters-strips">Blister e strip farmacêutico</a>
-          </p>
-          <p>
-            <a href="produtos.html#pets">Pet</a>
-          </p>
-          <p>
-            <a href="produtos.html#maquinas">Máquinas</a>
-          </p>
-
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Contato</h6>
-          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-            </svg> <a href="mailto:merepresentacoes.mg@gmail.com">merepresentacoes.mg@gmail.com</a></p>
-          <p>
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone-fill" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-            </svg> <a href="tel:+5531993167232">+55 (31) 99316-7232</a></p>
-
-          <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
-            </svg> <a href="tel:+553130477978">+55 (31) 3047-7978</a></p>
-
+    <!--Cards-->
+    <div class="containerCards">
+      <div class="divCards">
+        <div
+          class="card cardStart"
+          style="width: 18rem; background-color: #903004"
+        >
           <div>
-            <i class="fab fa-whatsapp" style="font-size: 20px; margin-right: 14px;">    </i><a
-              href="https://api.whatsapp.com/send?phone=5531993167232&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
-              target="T_Blank">+55 (31) 99316-7232</a>
+            <i
+              class="fas fa-globe-americas"
+              style="font-size: 80px; color: white"
+            ></i>
+            <div class="card-body" style="color: white">
+              <h5 class="card-title">Secondary card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <h6>
+                <a href="#" class="cardLink">Mais detalhes</a
+                ><i style="font-size: 12px" class="fas fa-arrow-right"></i>
+              </h6>
+            </div>
           </div>
-
         </div>
-        <!-- Grid column -->
 
+        <div
+          class="card cardStart"
+          style="width: 18rem; background-color: #8f3f1b"
+        >
+          <div>
+            <i class="fas fa-rocket" style="font-size: 80px; color: white"></i>
+            <div class="card-body" style="color: white">
+              <h5 class="card-title">Sky Hook</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <h6>
+                <a href="#" class="cardLink">Mais detalhes</a
+                ><i style="font-size: 12px" class="fas fa-arrow-right"></i>
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card cardStart"
+          style="width: 18rem; background-color: #8f4726"
+        >
+          <div>
+            <i
+              class="fab fa-battle-net"
+              style="font-size: 80px; color: white"
+            ></i>
+            <div class="card-body" style="color: white">
+              <h5 class="card-title">Inovação</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <h6>
+                <a href="#" class="cardLink">Mais detalhes</a
+                ><i style="font-size: 12px" class="fas fa-arrow-right"></i>
+              </h6>
+            </div>
+            <a href="" id="quem-somos"></a>
+          </div>
+        </div>
       </div>
-      <!-- Grid row -->
-
     </div>
-    <!-- Footer Links -->
+    <!--Cards-->
+    <!--Main content-->
+    <!--Textos com imagens-->
+    <div
+      class="container-fluid d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="containerTextImg d-flex align-items-center txt-img-1"
+        style="max-width: 1300px"
+      >
+        <img
+          src="img/nebula2.jpg"
+          class="img"
+          height="650px"
+          width="650px"
+          alt="#"
+        />
+        <div class="txt-container">
+          <h2 style="margin-bottom: 40px" class="left">Quem Somos?</h2>
+          <p class="justify font">
+            Somos um grupo de empresários que decidiram se unir em busca de
+            inovação. Trabalhamos de forma prática e precisa, buscando realizar
+            nossos objetivos. Nosso principal projeto é o Sky Hook, algo que
+            facilitaria as viagens espaciais, com um ótimo custo beneficio para
+            as explorações espaciais, criando a capacidade de evoluirmos de uma
+            sociedade planetária para interplanetária. <br /><br />
+            Temos a palavra Okänd como nosso símbolo, pois a ideia do Sky Hook
+            veio durante uma viagem na Suécia, inicialmente acreditamos estar
+            buscando algo fora do alcance, desconhecido e basicamente taxado
+            como impossível, mas estamos na área de exploração espacial
+            exatamente para buscar o impossível e tornar possível. Okänd
+            significa “Desconhecido” em sueco.
+            <br /><br />
+            A Okänd é uma organização internacional da qual foi fundada no
+            brasil, criada em 2012, uma empresa nova dentro do ramo, porem
+            composta de profissionais de ata qualidade, conhecimento e
+            dedicação. Atuamos em mais de 100 países e contamos com diversos
+            investidores.
+            <a href="" id="galeria"></a>
+          </p>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+    <!--Textos com imagens-->
+    <!--Image mosaic-->
+    <div class="image-mosaic">
+      <div
+        class="mosaic-card card-tall-2 card-wide-2"
+        style="background-image: url('https://picsum.photos/id/564/1200/800')"
+      ></div>
+      <div
+        class="mosaic-card card-tall-2"
+        style="background-image: url('img/banner.jpg')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/575/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/626/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/667/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/678/800/530')"
+      ></div>
+      <div
+        class="mosaic-card card-tall-2 card-wide-2"
+        style="background-image: url('https://picsum.photos/id/564/1200/800')"
+      ></div>
+      <div
+        class="mosaic-card card-wide-2"
+        style="background-image: url('https://picsum.photos/id/683/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/693/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/715/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/610/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/599/800/530')"
+      ></div>
+      <div
+        class="mosaic-card"
+        style="background-image: url('https://picsum.photos/id/599/800/530')"
+      ></div>
+    </div>
+    <!--Image mosaic-->
+    
+    <a href="" id="curiosidades"></a>
+    <!--accordion text-->
+    <div class="d-flex container-fluid align-items-center accordion-container">
+      <div class="accordion" id="accordionExample">
+        <h1>Curiosidades</h1>
+        <p>Apenas alguns pontos interessantes do Sky Hook</p>
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2012-2020 Okän</div>
-    <!-- Copyright -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                onclick="check('1')"
+                class="btn btn-link btn-block text-left align-items-center"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+                style="color: black"
+              >
+                <label
+                  for="check1"
+                  class="d-flex accordion-item"
+                  style="cursor: pointer"
+                >
+                  <b>Transporte</b>
+                  <i class="fas fa-plus plus1"></i>
+                  <i class="fas fa-minus minus1"></i>
+                </label>
+              </button>
+              <input type="checkbox" id="check1" hidden />
+            </h2>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              O que resolveu muitos dos nossos problemas de transporte na Terra
+              é o que chamamos de infraestrutura. Seja ela estradas para carros,
+              portos para navios ou trilhos para trens, tornamos mais fácil
+              chegar aos lugares. Nós podemos aplicar a mesma solução para
+              viagem espacial. Infraestrutura espacial vai fazer com que entrar
+              em órbita e ir para a Lua, Marte e além seja mais fácil e barato.
+            </div>
+          </div>
+        </div>
 
-  </footer>
-  <!-- Footer -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                onclick="check('2')"
+                style="color: black"
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <label
+                  for="check2"
+                  class="d-flex accordion-item"
+                  style="cursor: pointer"
+                >
+                  <b>Composição</b>
+                  <i class="fas fa-plus plus2"></i>
+                  <i class="fas fa-minus minus2"></i>
+                </label>
+              </button>
+              <input type="checkbox" id="check2" hidden />
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              A construção do skyhook seria composta de duas partes básicas, um
+              cabo super resistente podendo ser feito de Zylon uma fibra
+              altamente resistente e maleável, e um peso na ponta feito de algum
+              material denso e resistente.
+            </div>
+          </div>
+        </div>
 
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-<!-- oi lucas ola demo -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                onclick="check('3')"
+                style="color: black"
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <label
+                  for="check3"
+                  class="d-flex accordion-item"
+                  style="cursor: pointer"
+                >
+                  <b>Momentum</b>
+                  <i class="fas fa-plus plus3"></i>
+                  <i class="fas fa-minus minus3"></i>
+                </label>
+              </button>
+              <input type="checkbox" id="check3" hidden />
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              O skyhook possui uma funcionalidade simples, basicamente ficaria
+              em órbita e girando em torno de seu próprio eixo criando assim uma
+              catapulta para lançar naves a velocidades incríveis no espaço
+              usando usando uma lei básica da física chamada momentum. O skyhook
+              perde energia de momentum a cada vez que lança uma nave ao espaço,
+              devido a esse fato ele precisa ter uma forma de ganhar mais
+              energia e ela poderia ser ganha pelo recebimento de naves vindas
+              de outros planetas e usando muito pouca energia de combustíveis ou
+              até mesmo energia solar para alguns reajustes.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button
+                onclick="check('4')"
+                class="btn btn-link btn-block text-left align-items-center"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="true"
+                aria-controls="collapseFour"
+                style="color: black"
+              >
+                <label
+                  for="check4"
+                  class="d-flex accordion-item"
+                  style="cursor: pointer"
+                >
+                  <b>Infraestrutura</b>
+                  <i class="fas fa-plus plus4"></i>
+                  <i class="fas fa-minus minus4"></i>
+                </label>
+              </button>
+              <input type="checkbox" id="check4" hidden />
+            </h2>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              O que resolveu muitos dos nossos problemas de transporte na Terra
+              é o que chamamos de infraestrutura. Seja ela estradas para carros,
+              portos para navios ou trilhos para trens, tornamos mais fácil
+              chegar aos lugares. Nós podemos aplicar a mesma solução para
+              viagem espacial. Infraestrutura espacial vai fazer com que entrar
+              em órbita e ir para a Lua, Marte e além seja mais fácil e barato.
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+      <img
+        src="img/galaxy.png"
+        class="img accordion-img"
+        style="margin-bottom: 50px"
+        height="650px"
+        alt=""
+      />
+    </div>
+    <!--accordion text-->
+
+    <a href="" id="investidores"></a>
+    <!--Companies logos-->
+    <div class="container-logos container-fluid d-flex">
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="div-logo">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+    </div>
+    <!--Companies logos-->
+
+    <!--Main content-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">Okänd</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px"
+            />
+            <p style="text-align: justify">
+              "Exploraão espacial hoje em dia é com escalar uma montanha em um
+              monociclo levando uma mochila gigante cheia de explosivos."
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div
+            class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+            style="max-height: 230px; overflow: hidden; overflow-x: hidden"
+          >
+            <!-- Links -->
+            <p>
+              <a style="color: rgb(238, 238, 238)" href="#home">Home</a>
+            </p>
+            <p>
+              <a href="#quem-somos" style="color: rgb(238, 238, 238)"
+                >Quem somos</a
+              >
+            </p>
+            <p>
+              <a style="color: rgb(238, 238, 238)" href="#galeria">Galeria</a>
+            </p>
+            <p>
+              <a style="color: rgb(238, 238, 238)" href="#curiosidades"
+                >Curiosidades</a
+              >
+            </p>
+            <p>
+              <a style="color: rgb(238, 238, 238)" href="#investidores"
+                >Investidores</a
+              >
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6
+              style="color: rgb(238, 238, 238)"
+              class="text-uppercase font-weight-bold"
+            >
+              Contato
+            </h6>
+            <hr
+              class="deep-orange accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px"
+            />
+            <p>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-envelope-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                />
+              </svg>
+              <a
+                style="color: rgb(238, 238, 238)"
+                href="mailto:contato@okand.com"
+                >contato@okand.com</a
+              >
+            </p>
+            <p>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-phone-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                />
+              </svg>
+              <a style="color: rgb(238, 238, 238)" href="tel:+5531993167232"
+                >+55 (31) 99316-7232</a
+              >
+            </p>
+
+            <p>
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-telephone-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"
+                />
+              </svg>
+              <a style="color: rgb(238, 238, 238)" href="tel:+553130477978"
+                >+55 (31) 3047-7978</a
+              >
+            </p>
+
+            <div>
+              <i
+                class="fab fa-whatsapp"
+                style="font-size: 20px; margin-right: 14px"
+              >
+              </i
+              ><a
+                style="color: rgb(238, 238, 238)"
+                href="https://api.whatsapp.com/send?phone=5531993167232&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
+                target="T_Blank"
+                >+55 (31) 99316-7232</a
+              >
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2012-2020 Okän</div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- oi lucas ola demo -->
+</html>
