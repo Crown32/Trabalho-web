@@ -1,18 +1,8 @@
-//Header scolling change
-// window.onscroll = () => {
-//   let top = window.scrollY;
-  
-//   if (top <= 300) {
-//     $(".navbar").animate({
-//       backgroundColor: "none"
-//     });
-//   } else {
-//     $(".navbar").animate({
-//       fontSize: 15,
-//       backgroundColor: jQuery.Color("rgba(255, 255, 255, 0.9)"),
-//     });
-//   }
-// };
+//Navbar scrolling change
+$(document).on('scroll', function (e) {
+  $(".navbar-down").show();
+  $('.navbar-down').css('opacity', ($(document).scrollTop() / 350));
+});
 
 //Script para acordeão
 $(document).ready(function () {
@@ -20,7 +10,6 @@ $(document).ready(function () {
     $(`.minus${index}`).hide();
   }
 });
-
 function check(type) {
   const checkbox = document.getElementById(`check${type}`).checked;
   console.log(checkbox);
@@ -34,3 +23,11 @@ function check(type) {
     $(`.minus${type}`).hide();
   }
 }
+
+//Mosaic js
+    $('#myMosaic').Mosaic({
+      maxRows:10,
+      maxRowHeightPolicy:"crop",
+      maxRowHeight:500,
+      outerMargin:100
+    });

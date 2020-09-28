@@ -1,4 +1,5 @@
 /*Formatações gerais*/
+
 .justify {
   text-align: justify;
 }
@@ -20,9 +21,19 @@ body{
 }
 
 /*Navbar*/
-.navbar-collapse {
-  margin-left: -100px;
+.navbar{
+  height: 150px;
+  font-family: 'Karla', sans-serif;
 }
+
+.navbar-down{
+  height: unset;
+}
+
+.navbar-collapse {
+  margin-left: -50px;
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
     margin-left: unset;
@@ -40,10 +51,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(img/homicaindo.jpg);
+  background-image: url(img/banner.jpg);
+  
   align-items: center;
 }
 
@@ -53,14 +65,16 @@ body{
 
 /*Cards de conteúdo*/
 .containerCards {
+  margin-bottom: 40px;
+  background-color: black;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .divCards {
-  width: 80%;
-  margin-top: -70px;
+  width: 90%;
+  margin-top: 100px;
   padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +158,7 @@ body{
 }
 
 .accordion-container {
+  background-color: blueviolet;
   justify-content: space-between;
   margin-top: 50px;
   max-width: 1335px;
@@ -173,7 +188,8 @@ body{
   display: flex;
   justify-content: space-around;
   padding: 0;
-  flex-wrap: wrap;
+  overflow: hidden;
+  flex-wrap: nowrap;
   border-bottom: black 1px solid;
 }
 
@@ -184,58 +200,12 @@ body{
   align-items: center;
   font-size: 50px;
   height: 180px;
-  width: 200px;
+  min-width: 200px;
 }
 
 .div-logo:hover {
   color: rgba(255, 255, 255, 1);
   text-shadow: 0 0 80px #fff;
-}
-
-/*Image mosaic*/
-.image-mosaic {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-auto-rows: 240px;
-}
-
-.mosaic-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #353535;
-  font-size: 3rem;
-  color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
-    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height: 100%;
-  width: 100%;
-  border-radius: 4px;
-  transition: all 500ms;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 600px) {
-  .card-tall-2 {
-    grid-row: span 2 / auto;
-  }
-
-  .card-tall-3 {
-    grid-row: span 3 / auto;
-  }
-
-  .card-wide-2 {
-    grid-column: span 2 / auto;
-  }
-
-  .card-wide-3 {
-    grid-column: span 3 / auto;
-  }
 }
 
 /*Footer*/
@@ -246,7 +216,7 @@ body{
 }
 
 .page-footer hr {
-  background-color: #903004;
+  background-color: black;
 }
 
 .footer-copyright {
