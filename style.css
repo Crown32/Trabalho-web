@@ -31,9 +31,7 @@ body{
 
 .nav-link{
     margin: 0 15px;
-}
-.nav-link:hover{
-    color: #903004;
+    background: none;
 }
 
 
@@ -45,7 +43,7 @@ body{
   height: 110vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(img/banner.jpg);
+  background-image: url(img/homicaindo.jpg);
   align-items: center;
 }
 
@@ -137,6 +135,7 @@ body{
 /*accordion*/
 .accordion-item {
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .accordion {

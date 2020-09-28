@@ -1,3 +1,4 @@
+<!--Email Leo:polimig@leocoelho.net -->
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -16,12 +17,12 @@
     <title>Okän</title>
   </head>
 
-  <body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar" data-offset="30">
     <!--Menu-->
 
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
-      style="background-color: rgba(255, 255, 255, 0.767)"
+      class="navbar navbar-expand-lg fixed-top navbar-light"
+      style="font-size: 20px; background-color: rgba(255, 255, 255, 0.6);"
     >
       <a class="navbar-brand" href="" style="cursor: pointer"
         ><img src="img/logomini.png" height="40px" alt=""
@@ -54,7 +55,7 @@
     <!-- Fim Menu-->
 
     <!--Banner-->
-    <a href="" id="home"></a>
+    <a href="" id="home" style=" color: #903004; padding: 0; height: 0; font-size: 1px; position: absolute;">.</a>
     <div class="banner">
       <h1 style="color: whitesmoke; text-align: center; margin-top: -10vh">
         <i style="font-size: 55px" class="fas fa-quote-left"></i><br />
@@ -130,7 +131,7 @@
                 ><i style="font-size: 12px" class="fas fa-arrow-right"></i>
               </h6>
             </div>
-            <a href="" id="quem-somos"></a>
+            <a href="" id="quem-somos" style="background-color: turquoise; padding: 0; height: 0; font-size: 1px;">.</a>
           </div>
         </div>
       </div>
@@ -173,7 +174,7 @@
             composta de profissionais de ata qualidade, conhecimento e
             dedicação. Atuamos em mais de 100 países e contamos com diversos
             investidores.
-            <a href="" id="galeria"></a>
+            <a href="" id="galeria" style=" color: white; padding: 0; height: 0; font-size: 1px; position: absolute;">.</a>
           </p>
         </div>
       </div>
@@ -236,8 +237,8 @@
       ></div>
     </div>
     <!--Image mosaic-->
-    
-    <a href="" id="curiosidades"></a>
+
+    <a href="" id="curiosidades" style=" color: white; padding: 0; height: 0; font-size: 1px; position: absolute;">.</a>
     <!--accordion text-->
     <div class="d-flex container-fluid align-items-center accordion-container">
       <div class="accordion" id="accordionExample">
@@ -247,9 +248,10 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <button
+              <label
+                for="check1"
                 onclick="check('1')"
-                class="btn btn-link btn-block text-left align-items-center"
+                class="btn btn-block text-left align-items-center"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseOne"
@@ -257,16 +259,12 @@
                 aria-controls="collapseOne"
                 style="color: black"
               >
-                <label
-                  for="check1"
-                  class="d-flex accordion-item"
-                  style="cursor: pointer"
-                >
+                <div class="d-flex accordion-item" style="cursor: pointer">
                   <b>Transporte</b>
                   <i class="fas fa-plus plus1"></i>
                   <i class="fas fa-minus minus1"></i>
-                </label>
-              </button>
+                </div>
+              </label>
               <input type="checkbox" id="check1" hidden />
             </h2>
           </div>
@@ -290,26 +288,23 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
-              <button
+              <label
+                for="check2"
                 onclick="check('2')"
                 style="color: black"
-                class="btn btn-link btn-block text-left collapsed"
+                class="btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseTwo"
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                <label
-                  for="check2"
-                  class="d-flex accordion-item"
-                  style="cursor: pointer"
-                >
+                <div class="d-flex accordion-item" style="cursor: pointer">
                   <b>Composição</b>
                   <i class="fas fa-plus plus2"></i>
                   <i class="fas fa-minus minus2"></i>
-                </label>
-              </button>
+                </div>
+              </label>
               <input type="checkbox" id="check2" hidden />
             </h2>
           </div>
@@ -331,26 +326,23 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
-              <button
+              <label
+                for="check3"
                 onclick="check('3')"
                 style="color: black"
-                class="btn btn-link btn-block text-left collapsed"
+                class="btn btn-block text-left collapsed"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseThree"
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                <label
-                  for="check3"
-                  class="d-flex accordion-item"
-                  style="cursor: pointer"
-                >
+                <div class="d-flex accordion-item" style="cursor: pointer">
                   <b>Momentum</b>
                   <i class="fas fa-plus plus3"></i>
                   <i class="fas fa-minus minus3"></i>
-                </label>
-              </button>
+                </div>
+              </label>
               <input type="checkbox" id="check3" hidden />
             </h2>
           </div>
@@ -377,9 +369,10 @@
         <div class="card">
           <div class="card-header" id="headingFour">
             <h2 class="mb-0">
-              <button
+              <label
+                for="check4"
                 onclick="check('4')"
-                class="btn btn-link btn-block text-left align-items-center"
+                class="btn btn-block text-left align-items-center"
                 type="button"
                 data-toggle="collapse"
                 data-target="#collapseFour"
@@ -387,16 +380,12 @@
                 aria-controls="collapseFour"
                 style="color: black"
               >
-                <label
-                  for="check4"
-                  class="d-flex accordion-item"
-                  style="cursor: pointer"
-                >
+                <div class="d-flex accordion-item" style="cursor: pointer">
                   <b>Infraestrutura</b>
                   <i class="fas fa-plus plus4"></i>
                   <i class="fas fa-minus minus4"></i>
-                </label>
-              </button>
+                </div>
+              </label>
               <input type="checkbox" id="check4" hidden />
             </h2>
           </div>
@@ -428,7 +417,7 @@
     </div>
     <!--accordion text-->
 
-    <a href="" id="investidores"></a>
+    <a href="" id="investidores" style=" color: white; padding: 0; height: 0; font-size: 1px; position: absolute;">.</a>
     <!--Companies logos-->
     <div class="container-logos container-fluid d-flex">
       <div class="div-logo">
@@ -609,17 +598,18 @@
     <!-- Footer -->
   </body>
   <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="js/jquery.color.js"></script>
+<script src="js/script.js"></script>
   <!-- oi lucas ola demo -->
 </html>
