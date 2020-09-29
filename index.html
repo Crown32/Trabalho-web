@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
     <link
       href="node_modules/@fortawesome/fontawesome-free/css/all.css"
       rel="stylesheet"
@@ -18,7 +19,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="sortcut icon" href="img/logoaba.png" type="image/x-icon" />
+    <link rel="sortcut icon" href="img/logo.ico" type="image/x-icon" />
     <title>Okänd</title>
   </head>
 
@@ -28,15 +29,15 @@
       class="navbar navbar-expand-lg navbar-dark"
       style="font-size: 20px; position: absolute; width: 100%"
     >
-      <a class="navbar-brand" href="#home">Okänd</a>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" height="50px" alt="">Okänd</a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-expanded="false"E
+        aria-label="Toggle navigation"E
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -62,7 +63,7 @@
         opacity: 0;
       "
     >
-      <a class="navbar-brand" href="#home">Okänd</a>
+    <a class="navbar-brand" href="#" style="font-weight: 700;"><img src="img/logo.png" height="50px" alt="" style="font-weight: 700">Okänd</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -122,9 +123,8 @@
             <div class="card-body" style="color: black">
               <h5 class="card-title">Investimento</h5>
               <p class="card-text">
-                Para a continuidade do nosso projeto dependemos de investidores
-                que acreditem na inovação aeroespacial, já contamos com grandes
-                espresas como NASA e SpaceX.
+                Contamos com investidores que acreditam na inovação
+                aeroespacial, grandes empresas como NASA e SpaceX.
               </p>
             </div>
           </div>
@@ -177,7 +177,7 @@
     <!--Main content-->
     <!--Textos com imagens-->
     <div
-      class="container-fluid d-flex flex-column justify-content-center align-items-center"
+      class="container-fluid d-flex flex-column justify-content-center align-items-center" style="margin-bottom: 300px;"
     >
       <div
         class="containerTextImg d-flex align-items-center txt-img-1"
@@ -230,76 +230,78 @@
     </div>
     <!--Textos com imagens-->
 
-    <!--Image mosaic-->
-      <div id="myMosaic">
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="400"
-          height="350"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="400"
-          height="350"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="400"
-          height="350"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="400"
-          height="350"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="400"
-          height="350"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="320"
-          height="200"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="870"
-          height="420"
-        />
-        <img
-          src="https://picsum.photos/id/626/800/530"
-          data-high-res-image-src="https://picsum.photos/id/626/800/530"
-          width="600"
-          height="900"
-        />
+    <div style="background-color: black; color: white; margin-top: 240px;">
+      <!--Image mosaic-->
+      <div style="background-color: white; margin: 0 100px;">
+        <div id="myMosaic" style="background-color: black; margin-top: -200px;">
+          <img
+            id="img1"
+            onmouseover="blured(this.id,this.width,this.height)"
+            src="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            data-high-res-image-src="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          />
+  
+          <img
+            id="img2"
+            onmouseover="blured(this.id,this.width,this.height)"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+            data-high-res-image-src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+            style="width: 400px; height: 350px;"
+          />
+  
+          <img
+            id="img3"
+            onmouseover="blured(this.id,this.width,this.height)"
+            src="https://images.unsplash.com/photo-1457327289196-f38b88d97147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+            data-high-res-image-src="https://images.unsplash.com/photo-1457327289196-f38b88d97147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+            style="width: 400px; height: 350px;"
+          />
+          <img
+            id="img4"
+            onmouseover="blured(this.id,this.width,this.height)"
+            src="https://images.unsplash.com/photo-1554659489-e21b81e277b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+            data-high-res-image-src="https://images.unsplash.com/photo-1554659489-e21b81e277b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+            style="width: 400px; height: 350px;"
+          />
+  
+          <img
+            id="img5"
+            onmouseover="blured(this.id,this.width,this.height)"
+            src="https://images.unsplash.com/photo-1523968063095-61264537fc21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=807&q=80"
+            data-high-res-image-src="https://images.unsplash.com/photo-1523968063095-61264537fc21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=807&q=80"
+            style="width: 400px; height: 350px;"
+          />
+  
+          <img
+            id="img6"
+            onmouseover="blured(this.id,this.width,this.height)"
+            src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            data-high-res-image-src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          />
+  
+        </div>
       </div>
-    <!--Image mosaic-->
+      <!--Image mosaic-->
 
       <!--accordion text-->
       <div
         class="d-flex container-fluid align-items-center accordion-container"
       >
         <div class="accordion" id="accordionExample">
-          <h1>Curiosidades<a
-            href=""
-            id="curiosidades"
-            style="
-              color: white;
-              padding: 0;
-              height: 0;
-              font-size: 1px;
-              position: absolute;
-            "
-            >.</a
-          ></h1>
+          <h1>
+            Curiosidades<a
+              href=""
+              id="curiosidades"
+              style="
+                color: white;
+                padding: 0;
+                height: 0;
+                font-size: 1px;
+                position: absolute;
+              "
+              >.</a
+            >
+          </h1>
           <p>Apenas alguns pontos interessantes do Sky Hook</p>
 
           <div class="card" style="color: black">
@@ -439,7 +441,7 @@
                   style="color: black"
                 >
                   <div class="d-flex accordion-item" style="cursor: pointer">
-                    <b>Infraestrutura</b>
+                    <b>Viagem</b>
                     <i class="fas fa-plus plus4"></i>
                     <i class="fas fa-minus minus4"></i>
                   </div>
@@ -454,27 +456,22 @@
               data-parent="#accordionExample"
             >
               <div class="card-body">
-                O que resolveu muitos dos nossos problemas de transporte na
-                Terra é o que chamamos de infraestrutura. Seja ela estradas para
-                carros, portos para navios ou trilhos para trens, tornamos mais
-                fácil chegar aos lugares. Nós podemos aplicar a mesma solução
-                para viagem espacial. Infraestrutura espacial vai fazer com que
-                entrar em órbita e ir para a Lua, Marte e além seja mais fácil e
-                barato.
+                Convertendo-se em uma forma altamente rentável de transporte espacial. Devido a tamanha energia que é ganha nesses lançamentos o tempo de viagem se torna muito menor, passando de 9 a 10 meses para 3 a 4 meses.
               </div>
             </div>
           </div>
           <br /><br />
         </div>
         <img
-          src="img/galaxy.png"
+          src="https://images.unsplash.com/photo-1446941611757-91d2c3bd3d45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=733&q=80"
           class="img accordion-img"
           style="margin-bottom: 50px"
-          height="650px"
+          height="847px"
           alt=""
         />
       </div>
       <!--accordion text-->
+    </div>
 
     <a
       href=""
@@ -491,28 +488,54 @@
     <!--Companies logos-->
     <div class="container-logos container-fluid d-flex">
       <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
+        <a href="http://www.boeing.com//"
+          ><img
+            src="http://www.boeing.com/assets/images/logo.png"
+            width="150px"
+            alt=""
+        /></a>
       </div>
       <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
+        <a href="https://www.northropgrumman.com//"
+          ><img
+            src="https://www.northropgrumman.com/wp-content/uploads/2019/12/NGC-logo-white-on-clear.png"
+            width="175px"
+            alt=""
+        /></a>
       </div>
       <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
+        <a href="https://www.nasa.gov/"
+          ><img
+            src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"
+            alt=""
+        /></a>
       </div>
       <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
+        <a href="https://www.airbus.com/"
+          ><img
+            src="https://www.airbus.com/content/dam/corporate-topics/branding/logos/Airbus_white.png"
+            width="100px"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="div-logo">
+        <a href="https://www.spacex.com/"
+          ><img src="img/spacex-vector-logo.svg" width="175px" alt=""
+        /></a>
       </div>
       <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
+        <a href="http://www.cnes-csg.fr/web/CNES-en/7114-home-cnes.php"
+          ><img src="img/cnes-logo.png" width="100px" alt=""
+        /></a>
       </div>
       <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
-      </div>
-      <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
-      </div>
-      <div class="div-logo">
-        <i class="fas fa-user-astronaut"></i>
+        <a href="https://www.lockheedmartin.com/en-us/index.html/"
+          ><img
+            src="https://www.lockheedmartin.com/content/dam/lockheed-martin/general/lm-logo.svg"
+            width="300px"
+            alt=""
+        /></a>
       </div>
     </div>
     <!--Companies logos-->
@@ -534,7 +557,7 @@
               style="width: 60px"
             />
             <p style="text-align: justify">
-              "Exploraão espacial hoje em dia é com escalar uma montanha em um
+              "Exploração espacial hoje em dia é como escalar uma montanha em um
               monociclo levando uma mochila gigante cheia de explosivos."
             </p>
           </div>
@@ -617,8 +640,8 @@
                   d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
                 />
               </svg>
-              <a style="color: rgb(238, 238, 238)" href="tel:+5531993167232"
-                >+55 (31) 99316-7232</a
+              <a style="color: rgb(238, 238, 238)" href="tel:+5531991524560"
+                >+55 (31) 99152-4560</a
               >
             </p>
 
@@ -649,9 +672,9 @@
               </i
               ><a
                 style="color: rgb(238, 238, 238)"
-                href="https://api.whatsapp.com/send?phone=5531993167232&text=Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..."
+                href="https://api.whatsapp.com/send?phone=5531994740203&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
                 target="T_Blank"
-                >+55 (31) 99316-7232</a
+                >+55 (31) 99474-0203</a
               >
             </div>
           </div>
