@@ -29,7 +29,7 @@
       class="navbar navbar-expand-lg navbar-dark"
       style="font-size: 20px; position: absolute; width: 100%"
     >
-      <a class="navbar-brand" href="#"><img src="img/logo.png" height="50px" alt="">Okänd</a>
+      <a class="navbar-brand" style="margin-left: 30px;" href="#"><img src="img/logolight.png" height="50px" alt="">Okänd</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -44,6 +44,7 @@
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarNavAltMarkup"
+        style="margin-left: -8vw;"
       >
         <div class="navbar-nav">
           <a class="nav-link" href="#home">HOME</a>
@@ -78,6 +79,7 @@
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarNavAltMarkup"
+        style="margin-left: -8vw;"
       >
         <div class="navbar-nav">
           <a class="nav-link" href="#home">HOME</a>
@@ -115,11 +117,7 @@
           style="width: 18rem; background-color: #ffffff"
         >
           <div>
-            <!-- <i
-              class="fas fa-globe-americas"
-              style="font-size: 80px; color: white"
-            ></i> -->
-            <img src="img/icon-1.png" alt="" />
+            <img src="img/icon-1.png" alt="" style="margin-top: -22px;"/>
             <div class="card-body" style="color: black">
               <h5 class="card-title">Investimento</h5>
               <p class="card-text">
@@ -135,7 +133,6 @@
           style="width: 18rem; background-color: #041d3a"
         >
           <div>
-            <!-- <i class="fas fa-rocket" style="font-size: 80px; color: white"></i> -->
             <img src="img/icon-2.png" alt="" />
             <div class="card-body" style="color: white">
               <h5 class="card-title">Sky Hook</h5>
@@ -161,7 +158,7 @@
           style="width: 18rem; background-color: #3b508c"
         >
           <div>
-            <img src="img/icon-3.png" alt="" />
+            <img src="img/icon-3.png" alt="" style="margin-top: -15px;" />
             <div class="card-body" style="color: white">
               <h5 class="card-title">Criatividade</h5>
               <p class="card-text">
@@ -232,11 +229,12 @@
 
     <div style="background-color: black; color: white; margin-top: 240px;">
       <!--Image mosaic-->
-      <div style="background-color: white; margin: 0 100px;">
+      <div class="mosaic-container">
         <div id="myMosaic" style="background-color: black; margin-top: -200px;">
           <img
             id="img1"
-            onmouseover="blured(this.id,this.width,this.height)"
+            onmouseenter="blured(this.id,this.width,this.height)"
+            onclick="blured(this.id,this.width,this.height)"
             src="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
             data-high-res-image-src="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
           />
@@ -244,6 +242,7 @@
           <img
             id="img2"
             onmouseover="blured(this.id,this.width,this.height)"
+            onclick="blured(this.id,this.width,this.height)"
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
             data-high-res-image-src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
             style="width: 400px; height: 350px;"
@@ -252,6 +251,7 @@
           <img
             id="img3"
             onmouseover="blured(this.id,this.width,this.height)"
+            onclick="blured(this.id,this.width,this.height)"
             src="https://images.unsplash.com/photo-1457327289196-f38b88d97147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
             data-high-res-image-src="https://images.unsplash.com/photo-1457327289196-f38b88d97147?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
             style="width: 400px; height: 350px;"
@@ -259,6 +259,7 @@
           <img
             id="img4"
             onmouseover="blured(this.id,this.width,this.height)"
+            onclick="blured(this.id,this.width,this.height)"
             src="https://images.unsplash.com/photo-1554659489-e21b81e277b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
             data-high-res-image-src="https://images.unsplash.com/photo-1554659489-e21b81e277b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
             style="width: 400px; height: 350px;"
@@ -267,6 +268,7 @@
           <img
             id="img5"
             onmouseover="blured(this.id,this.width,this.height)"
+            onclick="blured(this.id,this.width,this.height)"
             src="https://images.unsplash.com/photo-1523968063095-61264537fc21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=807&q=80"
             data-high-res-image-src="https://images.unsplash.com/photo-1523968063095-61264537fc21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=807&q=80"
             style="width: 400px; height: 350px;"
@@ -275,6 +277,7 @@
           <img
             id="img6"
             onmouseover="blured(this.id,this.width,this.height)"
+            onclick="blured(this.id,this.width,this.height)"
             src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
             data-high-res-image-src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
           />
@@ -466,7 +469,7 @@
           src="https://images.unsplash.com/photo-1446941611757-91d2c3bd3d45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=733&q=80"
           class="img accordion-img"
           style="margin-bottom: 50px"
-          height="847px"
+          height="850px"
           alt=""
         />
       </div>

@@ -22,7 +22,7 @@ body{
 
 /*Navbar*/
 .navbar{
-  height: 150px;
+  height: 130px;
   font-family: 'Karla', sans-serif;
 }
 
@@ -195,6 +195,16 @@ body{
   width: 0px;
 }
 
+.mosaic-container{
+  margin: 0 100px;
+}
+
+@media(max-width:500px){
+  .mosaic-container{
+    margin: unset;
+  }
+}
+
 /*Logos*/
 .container-logos {
   background-color: #1b1c1d;
@@ -203,7 +213,6 @@ body{
   padding: 0;
   overflow: hidden;
   flex-wrap: nowrap;
-  border-bottom: black 1px solid;
 }
 
 .div-logo {
@@ -223,8 +232,9 @@ body{
 
 /*Footer*/
 .page-footer {
+  border-top: black 1px solid;
   color: white;
-  padding-top: 20px;
+  padding-top: 1px;
   background-color: #1b1c1d;
 }
 

@@ -25,13 +25,23 @@ function check(type) {
 }
 
 //Mosaic js
+function mosaic() {
+  $("#myMosaic").Mosaic({
+    maxRows: 10,
+    maxRowHeightPolicy: "crop",
+    maxRowHeight: 500,
+  });
+}
+
+mosaic();
+
 function blured(id, width, height) {
   $.getJSON("../data/Data.json", (data) => {
     const dataContent = data.filter((data) => data.id == id);
 
     $(`#${id}`).fadeOut(250, () => {
       $(`#${id}`).replaceWith(
-        `<div id="${id}"onmouseleave="normal(this.id)" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width:${width}px; height:${height}px;">
+        `<div id="${id}"onmouseleave="normal(this.id)" onclick="normal(this.id)" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width:${width}px; height:${height}px;">
       <h5>${dataContent[0].title}</h5>
       <p>${dataContent[0].content}</p>
     </div>`
@@ -39,14 +49,11 @@ function blured(id, width, height) {
 
       $(`#${id}`).hide();
       $(`#${id}`).fadeIn(250);
-
-      $("#myMosaic").Mosaic({
-        maxRows: 10,
-        maxRowHeightPolicy: "crop",
-        maxRowHeight: 500,
-      });
+      mosaic();
     });
   });
+  setTimeout(normalAux, 249, id);
+  mosaic();
 }
 
 function normal(id) {
@@ -56,32 +63,52 @@ function normal(id) {
     $(`#${id}`).fadeOut(250, () => {
       $(`#${id}`).replaceWith(
         `<img
-    id="${id}"
-    onmouseover="blured(this.id,this.width,this.height)"
-    src="${dataContent[0].src}"
-    data-high-res-image-src="${dataContent[0].src}"
-    style="width:${dataContent[0].width}px; height:${dataContent[0].height}px"
-  /> `
+        id="${id}"
+        onmouseover="blured(this.id,this.width,this.height)"
+        src="${dataContent[0].src}"
+        data-high-res-image-src="${dataContent[0].src}"
+        style="width:${dataContent[0].width}px; height:${dataContent[0].height}px"
+      /> `
       );
 
       $(`#${id}`).hide();
       $(`#${id}`).fadeIn(250);
-
-      $("#myMosaic").Mosaic({
-        maxRows: 10,
-        maxRowHeightPolicy: "crop",
-        maxRowHeight: 500,
-      });
+      mosaic();
     });
   });
+  mosaic();
 }
 
-$("#myMosaic").Mosaic({
-  maxRows: 10,
-  maxRowHeightPolicy: "crop",
-  maxRowHeight: 500,
-});
+function normalAux(id) {
+  if ($(`#${id}`).is(":hover")) {
+    console.log(":)");
+  } else {
+    function normalExec(id) {
+      $.getJSON("../data/Data.json", (data) => {
+        const dataContent = data.filter((data) => data.id == id);
 
+        $(`#${id}`).fadeOut(250, () => {
+          $(`#${id}`).replaceWith(
+            `<img
+        id="${id}"
+        onmouseover="blured(this.id,this.width,this.height)"
+        onclick="blured(this.id,this.width,this.height)"
+        src="${dataContent[0].src}"
+        data-high-res-image-src="${dataContent[0].src}"
+        style="width:${dataContent[0].width}px; height:${dataContent[0].height}px"
+      /> `
+          );
+
+          $(`#${id}`).hide();
+          $(`#${id}`).fadeIn(250);
+          mosaic();
+        });
+      });
+    }
+    setTimeout(normalExec, 400, id);
+  }
+  mosaic();
+}
 
 /*
 Div de layout
