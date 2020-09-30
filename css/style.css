@@ -35,11 +35,18 @@ body{
 }
 
 .navbar-collapse {
-  margin-left: -50px;
+  margin-left: -8vw
+}
+
+.navbar-brand-top{
+  margin-left: 30px;
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
+    margin-left: unset;
+  }
+  .navbar-brand-top{
     margin-left: unset;
   }
 }
@@ -58,8 +65,7 @@ body{
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(img/banner.jpg);
-  
+  background-image: url(../img/banner.jpg);
   align-items: center;
 }
 
@@ -69,7 +75,6 @@ body{
 
 /*Cards de conteúdo*/
 .containerCards {
-  margin-bottom: 40px;
   background-color: black;
   width: 100%;
   display: flex;
@@ -119,6 +124,37 @@ body{
   padding-right: 10px;
   color: white;
 }
+
+#skyhookContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.up-down {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.up-down:hover {
+  top: -10px;
+}
+
+.down-up {
+  position: relative;
+  bottom: 0;
+  transition: bottom ease 0.5s;
+}
+.cardLink:hover .down-up {
+  bottom: -10px;
+}
+
 /*Textos com imagens*/
 .txt-container {
   margin: 0 100px;
@@ -221,7 +257,7 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  height: 180px;
+  height: 130px;
   min-width: 200px;
 }
 
@@ -234,7 +270,6 @@ body{
 .page-footer {
   border-top: black 1px solid;
   color: white;
-  padding-top: 1px;
   background-color: #1b1c1d;
 }
 

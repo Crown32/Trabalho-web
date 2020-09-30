@@ -1,7 +1,13 @@
 //Navbar scrolling change
-$(document).on("scroll", function (e) {
-  $(".navbar-down").show();
-  $(".navbar-down").css("opacity", $(document).scrollTop() / 350);
+$(".navbar-down").hide();
+$(document).on("scroll", function () {
+  if ($(document).scrollTop()>=100) {
+    $(".navbar-down").slideDown(200);
+    $(".navbar-down").show();
+    $(".navbar-down").css("opacity", $(document).scrollTop() / 350); 
+  }else{
+    $(".navbar-down").slideUp(200);
+  }
 });
 
 //Script para acordeão
@@ -12,16 +18,33 @@ $(document).ready(function () {
 });
 function check(type) {
   const checkbox = document.getElementById(`check${type}`).checked;
-  console.log(checkbox);
   if (checkbox == false) {
     $(`check${type}`).prop("checked", true);
-    $(`.plus${type}`).hide();
-    $(`.minus${type}`).show();
+    $(`.plus${type}`).fadeOut(150,()=>{
+      $(`.minus${type}`).fadeIn(150);
+    });
+
   } else {
     $(`check${type}`).prop("checked", false);
-    $(`.plus${type}`).show();
-    $(`.minus${type}`).hide();
+    $(`.minus${type}`).fadeOut(150,()=>{
+      $(`.plus${type}`).fadeIn(150);
+    });
   }
+}
+
+//Card link openning
+$(`#skyhookContent`).hide()
+document.getElementById("skyhookCheck").checked=true;
+
+function skyhookContent(aux) {
+  const checkbox = document.getElementById("skyhookCheck").checked;
+
+    if (checkbox==true) {
+      $("#skyhookContent").slideDown(300);
+    }else{
+      $("#skyhookContent").slideUp(300);
+    }
+  
 }
 
 //Mosaic js
