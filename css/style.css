@@ -91,6 +91,27 @@ body{
   align-items: center;
 }
 
+.card1{
+  order: 1;
+}
+
+.card2{
+  order: 2;
+}
+
+.card3{
+  order: 3;
+}
+
+@media(max-width:1221px){
+  .card2{
+    order: 3;
+  }
+  .card3{
+    order: 2;
+  }
+}
+
 .cardStart {
   background-color: #232124;
   text-align: center;
