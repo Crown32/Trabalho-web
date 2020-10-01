@@ -220,7 +220,6 @@ body{
 
 .accordion-container {
   justify-content: space-between;
-  margin-top: 50px;
   max-width: 1335px;
 }
 
@@ -247,11 +246,6 @@ body{
   background-color: black;
 }
 
-.aux-img{
-  height: 0px;
-  width: 0px;
-}
-
 .mosaic-container{
   margin: 0 100px;
 }
@@ -261,7 +255,6 @@ body{
     margin: unset;
   }
 }
-
 /*Logos*/
 .container-logos {
   background-color: #1b1c1d;
@@ -269,7 +262,7 @@ body{
   justify-content: space-around;
   padding: 0;
   overflow: hidden;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .div-logo {
@@ -299,8 +292,18 @@ body{
 }
 
 .footer-copyright {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   background-color: #464647;
   height: 50px;
+}
+
+@media(max-width:500px){
+  .footer-copyright {
+    height: 80px;
+  }
+  
 }
 
 svg {
