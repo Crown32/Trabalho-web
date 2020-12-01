@@ -241,6 +241,53 @@ body{
     width: 100%;
   }
 }
+
+/*Suport*/
+.suport-div{
+  max-width: 1335px;
+}
+
+.suport-content{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.suport-title{
+  display: flex;
+  flex-direction: column;
+}
+
+.suport-subtitle{
+  font-size:13px ;
+}
+
+.suport-aux-txt{
+  margin-bottom: 150px;
+}
+
+.suport-content-txt{
+  padding: 30px;
+}
+
+@media(max-width:1250px){
+  .suport-content{
+    justify-content: center;
+  }
+  .suport-aux-txt{
+    margin-bottom: 70px;
+  }
+}
+
+@media(max-width:1244px){
+  .suport-div{
+    text-align: center;
+  }
+}
+
+
 /*Mosaic*/
 #myMosaic img{
   background-color: black;
@@ -255,8 +302,24 @@ body{
     margin: unset;
   }
 }
+
+/*Investimento*/
+.investimento{
+  padding-top: 0px;
+  padding: 80px;
+  color:white;
+  max-width: 1235px;
+}
+
+.investimento-content{
+  align-items: center;
+  display: flex;
+  justify-content: space-between
+}
+
 /*Logos*/
 .container-logos {
+  margin-top: -60px;
   background-color: #1b1c1d;
   display: flex;
   justify-content: space-around;
